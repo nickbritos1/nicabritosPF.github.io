@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Desarrollador, Web, Frontend, Nicanor, Portfolio">
+    <meta name="description" content="Esta es mi página de presentación, donde muestro mi habilidad como Frontend Developer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./Styles/normalize.css">
-    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="stylesheet" href="./Styles/estilo.css">
     <script src="https://kit.fontawesome.com/8cf43275b6.js" crossorigin="anonymous"></script>
     <title>Proyecto Final</title>
 </head>
 <body>
-    <header>
+    <header>     
         <nav class="navegador navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler bg-dark menu-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +36,11 @@
             <h1 class="mb-0 text-white nombre">Nicanor Britos</h1>
             <p class="text-white">Frontend Developer</p>
         </div>
+        <div class="flecha">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <section class="banner d-flex align-items-center text-center">
         <img class="responsive-none" src="https://dummyimage.com/360x440" alt="">
@@ -44,31 +51,28 @@
     </section>
     <section class="proyectos d-flex flex-wrap justify-content-end">
         <h3 class="proyectos__titulo m-3 text-white">Mis Proyectos</h3>
-        <div class="proyectos-container mt-5">
-            <div class="tarjeta">
-                <figure><img src="./img/que-es-ecommerce.jpeg" alt=""></figure>
-                <div class="contenido">
-                    <h3 class="fw-bold text-white">eComerce</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit enim unde quidem eum cum veniam, illo dolorem iure cumque. Eaque obcaecati.</p>
+        <div class="d-flex proyectos-container mt-5">
+            <div class="me-3 tarjeta">
+                <div class="container2">
+                    <img src="./img/que-es-ecommerce.jpeg">
+                    <div class="centrado">Ver más</div>
                 </div>
             </div>
-            <div class="tarjeta">
-                <figure><img src="./img/que-es-ecommerce.jpeg" alt=""></figure>
-                <div class="contenido">
-                    <h3 class="fw-bold text-white">eComerce</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit enim unde quidem eum cum veniam, illo dolorem iure cumque. Eaque obcaecati.</p>
+            <div class="me-3 tarjeta">
+                <div class="container2">
+                    <img src="./img/que-es-ecommerce.jpeg">
+                    <div class="centrado">Ver más</div>
                 </div>
             </div>
-            <div class="tarjeta">
-                <figure><img src="./img/que-es-ecommerce.jpeg" alt=""></figure>
-                <div class="contenido">
-                    <h3 class="fw-bold text-white">eComerce</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit enim unde quidem eum cum veniam, illo dolorem iure cumque. Eaque obcaecati.</p>
+            <div class="me-3 tarjeta">
+                <div class="container2">
+                    <img src="./img/que-es-ecommerce.jpeg">
+                    <div class="centrado">Ver más</div>
                 </div>
             </div>
         </div>
     </section>
-    <h3 class="pie mt-2 pe-5 text-white text-end">¿Querés ver todos mis proyectos? <a class="text-decoration-none" href="./pages/portfolio.html">Hacé click acá</a></h3>
+    <p class="pie mt-2 pe-5 text-white text-end">¿Querés ver todos mis proyectos? <a class="text-decoration-none" href="./pages/portfolio.html">Hacé click acá</a></p>
     <section class="contacto-container d-flex justify-content-end pt-5">
         <div class="section-contacto">
             <h3 class="text-white text-start p-5">¿Te gustó mi trabajo?</h3>

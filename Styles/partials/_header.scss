@@ -1,0 +1,90 @@
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .navegador {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        transition: background-color .4s;
+        position: fixed;
+        top: 0;
+
+        &:hover {
+            background-color: rgb(26, 26, 26);
+        }
+
+        .nav-enlaces {
+            color: #fff;
+    
+            &:hover {
+                color: #bbb;
+            }
+        }
+
+        .menu-hamburguesa {
+            color: #fff;
+        }
+    }
+
+    .video-fondo {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    
+    .fondo-responsive {
+        display: none;
+    }
+
+    .nombre {
+        margin-top: 250px;
+    }
+
+    .flecha {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: rotate(0deg);
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 1.5vw;
+            height: 1.5vw;
+            border-bottom: 5px solid white;
+            border-right: 5px solid white;
+            transform: rotate(45deg);
+            margin: -10px;
+            animation: animate 2s infinite;
+
+            &:nth-child(2) {
+                animation-delay: -.2s;
+            }
+
+            &:nth-child(3) {
+            animation-delay: -.4s;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}

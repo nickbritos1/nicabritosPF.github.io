@@ -1,0 +1,69 @@
+@media screen and (max-width: 480px) {
+    .fondo-responsive {
+        display: block !important;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    .responsive-none {
+        display: none;
+    }
+
+    .video-fondo {
+        display: none;
+    }
+
+    .proyectos {
+        width: 100%;
+        justify-content: center !important;
+    }
+    .proyectos__titulo {
+        text-align: center;
+    }
+    .proyectos-container {
+        display: flex;
+        justify-content: center;
+    }
+    .pie {
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .contacto-container {
+        padding: 0% !important;
+    }
+    .section-contacto h3 {
+        text-align: center !important;
+    }
+
+    .section-contacto p {
+        padding: 0 !important;  
+        text-align: center !important;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .tarjeta {
+        margin-right: 0 !important;
+    }
+
+    .flecha {
+        display: none;
+    }
+
+    .container2 {
+        margin: 5px 0px;
+    }
+
+    .barras {
+        width: 150%;
+    }
+}

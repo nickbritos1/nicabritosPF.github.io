@@ -1,0 +1,319 @@
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header .navegador {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.4s;
+  position: fixed;
+  top: 0;
+}
+header .navegador:hover {
+  background-color: rgb(26, 26, 26);
+}
+header .navegador .nav-enlaces {
+  color: #fff;
+}
+header .navegador .nav-enlaces:hover {
+  color: #bbb;
+}
+header .navegador .menu-hamburguesa {
+  color: #fff;
+}
+header .video-fondo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+header .fondo-responsive {
+  display: none;
+}
+header .nombre {
+  margin-top: 250px;
+}
+header .flecha {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+header .flecha span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  -webkit-animation: animate 2s infinite;
+          animation: animate 2s infinite;
+}
+header .flecha span:nth-child(2) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+header .flecha span:nth-child(3) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+/*-------------------------------------------------------------------ESTILOS GENERALES-------------------------------------------------------------------*/
+@font-face {
+  font-family: circularBook;
+  src: url(../fonts/CircularStd-Book.otf);
+}
+@font-face {
+  font-family: bebasNeue;
+  src: url(../fonts/BebasNeue-Regular.otf);
+}
+* {
+  font-family: circularBook;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+section {
+  background-color: rgb(26, 26, 26);
+}
+
+/*-------------------------------------------------------------------INDEX-------------------------------------------------------------------*/
+.banner h2 {
+  display: inline;
+  color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  background-image: url(https://t4.ftcdn.net/jpg/04/67/67/87/360_F_467678707_2HGvlibdCAbYS1cNxAgvdMissnB00eiY.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+
+.proyectos-container {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.proyectos-container .container2 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.proyectos-container .container2:hover > img {
+  opacity: 0.6 !important;
+  transition: opacity 0.4s;
+}
+.proyectos-container .container2 img {
+  cursor: pointer;
+  width: 260px;
+  height: 155px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.proyectos-container .container2 img:hover + .centrado {
+  display: block;
+}
+.proyectos-container .container2 .centrado {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.pie {
+  background-color: rgb(26, 26, 26);
+}
+.pie a {
+  color: #c237db;
+  transition: 0.3s;
+}
+.pie a:hover {
+  color: #9d2fb0;
+}
+
+.section-contacto {
+  width: 100%;
+}
+.section-contacto a {
+  color: #c237db;
+  transition: 0.3s;
+}
+.section-contacto a:hover {
+  color: #9d2fb0;
+}
+
+.barra-html {
+  background-color: rgb(251, 84, 0);
+}
+
+.form {
+  width: 25%;
+}
+.form .form-container {
+  width: 100%;
+}
+.form .form-container .btn-enviar {
+  background-color: #c237db;
+}
+
+.redes ul {
+  list-style: none;
+}
+.redes ul li {
+  margin-bottom: 30px;
+}
+.redes ul li a {
+  color: #c237db;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.redes ul li a:hover {
+  color: #9d2fb0;
+}
+.redes ul li a i {
+  margin: 10px;
+}
+
+.habilidades {
+  width: 60%;
+}
+.habilidades .iconos-container {
+  display: inline-flex;
+  border-bottom: 4px solid #EFEFEF;
+  border-radius: 5px;
+}
+.habilidades .iconos-container img {
+  width: 60px;
+  filter: drop-shadow(0px 0px 1px #4b4b50);
+  -webkit-animation: flotante 3s linear infinite;
+          animation: flotante 3s linear infinite;
+}
+.habilidades .iconos-container img:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.habilidades .iconos-container img:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.habilidades .iconos-container img:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes flotante {
+  0%, 100% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(-23px);
+  }
+}
+
+@keyframes flotante {
+  0%, 100% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(-23px);
+  }
+}
+iframe {
+  border-radius: 15%;
+}
+
+@media screen and (max-width: 480px) {
+  .fondo-responsive {
+    display: block !important;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  header {
+    height: 60vh;
+  }
+  .responsive-none {
+    display: none;
+  }
+  .video-fondo {
+    display: none;
+  }
+  .proyectos {
+    width: 100%;
+    justify-content: center !important;
+  }
+  .proyectos__titulo {
+    text-align: center;
+  }
+  .proyectos-container {
+    display: flex;
+    justify-content: center;
+  }
+  .pie {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .contacto-container {
+    padding: 0% !important;
+  }
+  .section-contacto h3 {
+    text-align: center !important;
+  }
+  .section-contacto p {
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  .form {
+    width: 100%;
+  }
+  .tarjeta {
+    margin-right: 0 !important;
+  }
+  .flecha {
+    display: none;
+  }
+  .container2 {
+    margin: 5px 0px;
+  }
+  .barras {
+    width: 150%;
+  }
+}/*# sourceMappingURL=estilo.css.map */
