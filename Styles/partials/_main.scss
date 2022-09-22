@@ -17,6 +17,16 @@
 
 body {
     background-color: $colorPrincipal;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        color: $colorPrincipal;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #4b4b50;
+        border-radius: 8px;
+    }
 }
 
 section {
@@ -25,7 +35,9 @@ section {
 
 /*-------------------------------------------------------------------INDEX-------------------------------------------------------------------*/
 
-.banner h2 {
+.banner {
+
+    h2 {
         display: inline;
         color: rgba(0, 0, 0, 0);
         font-weight: bold;
@@ -33,6 +45,20 @@ section {
         background-size: cover;
         -webkit-background-clip: text;
     }
+
+    .foto-personal {
+        width: 360px;
+        height: 440px;
+    }
+}
+
+.seccion-gris {
+    background-color: #4b4b50;
+}
+
+.proyectos {
+    background-color: #4b4b50;
+}
 
 .proyectos-container {
     width: 80%;
@@ -68,11 +94,14 @@ section {
             transform: translate(-50%, -50%);
             display: none;
         }
+            .cargando {
+            display: block;
+        }
     }
 }
 
 .pie {
-    background-color: $colorPrincipal;
+    background-color: #4b4b50;
 
     a {
         color: $colorSecundario;
@@ -162,6 +191,11 @@ section {
             }
         }
     }
+
+    .titulos_barritas {
+        position: relative;
+        top: 7px;
+    }
 }
 
 @keyframes flotante {
@@ -175,5 +209,5 @@ section {
 }
 
 iframe {
-    border-radius: 15%;
+    border-radius: 100px;
 }

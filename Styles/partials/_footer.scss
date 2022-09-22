@@ -1,0 +1,13 @@
+footer {
+    background-color: $colorPrincipal;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 30px;
+    backdrop-filter: blur(2px);
+
+    h6 {
+        margin: 0;
+        text-align: center;
+        color: black;
+    }
+}
