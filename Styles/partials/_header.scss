@@ -31,6 +31,8 @@ header {
 
     .video-fondo {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         position: absolute;
         left: 0;
         top: 0;
@@ -42,12 +44,12 @@ header {
     }
 
     .nombre {
-        margin-top: 250px;
+        margin-top: 50%;
     }
 
     .flecha {
         position: absolute;
-        top: 85%;
+        bottom: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
         transform: rotate(0deg);

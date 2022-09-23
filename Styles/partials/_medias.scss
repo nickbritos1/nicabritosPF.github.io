@@ -8,15 +8,11 @@
         z-index: -1;
     }
 
-    header {
-        height: 60vh;
+    .p-container{
+        width: 130%;
     }
 
     .responsive-none {
-        display: none;
-    }
-
-    .video-fondo {
         display: none;
     }
 
@@ -55,8 +51,9 @@
         margin-right: 0 !important;
     }
 
-    .flecha {
-        display: none;
+    .mentalidad {
+        text-align: center !important;
+        margin: 0px !important;
     }
 
     .container2 {
@@ -73,5 +70,37 @@
 
     .foto-personal {
         width: 100px;
+    }
+
+    .form-contacto {
+        justify-content: center;
+
+        .form {
+
+            h3 {
+                text-align: center !important;
+                padding: 0px !important;
+                margin-top: 10px;
+            }
+
+            .form-container {
+                margin: 0px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1013px) {
+    
+    .proyectos {
+        width: 100%;
+        justify-content: center !important;
+    }
+    .proyectos__titulo {
+        text-align: center;
+    }
+    .proyectos-container {
+        display: flex;
+        justify-content: center;
     }
 }
