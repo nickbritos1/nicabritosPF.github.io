@@ -304,14 +304,6 @@ footer h6 {
 }
 
 @media screen and (max-width: 480px) {
-  .fondo-responsive {
-    display: block !important;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-  }
   .p-container {
     width: 130%;
   }
